@@ -1,2 +1,8 @@
-all:
-	@echo It works!
+all: test
+
+%.elf: %.c
+	$(CC) $< -o $@
+
+test: main.elf
+	./main.elf
+

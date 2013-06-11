@@ -1,6 +1,6 @@
 language: c
 compiler:
   - gcc
-  - clang
+# - clang
 # Change this to your needs
 script: ./configure && make
